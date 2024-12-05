@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌤️ Weather Guessing Game</h1>
+        <p>Guess the temperature and learn about cities around the world!</p>
+    </header>
+    
+    <main>
+        <section class="game-container">
+            <div class="game-header">
+                <h2 id="city-name">City Name</h2>
+                <p id="city-country">Country Name</p>
+                <p id="city-fact">Loading City Facts...</p>
+            </div>
+            
+            <div class="game-content">
+                <label for="difficulty-select">Choose Difficulty:</label>
+                <select id="difficulty-select">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                
+                <input type="number" id="guess-input" placeholder="Enter your guess (°C)" />
+                <button id="submit-btn">Submit Guess</button>
+                <p id="feedback"></p>
+                
+                <p>Time Left: <span id="timer">10</span> seconds</p>
+                <p>Score: <span id="score">0</span></p>
+                
+                <button id="reset-btn" class="reset-btn">Reset Game</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Created by Your Name for the Capstone Project</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
